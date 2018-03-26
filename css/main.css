@@ -19,6 +19,38 @@ header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 14px;
+  font-weight: 200;
+  overflow: auto;
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* BEGIN MEDIA QUERY FONT RESIZE ON */
+
+@media all and (min-width: 1024px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 401px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    p {
+        font-size: 9px;
+    }
+
+}
+
+
+/*END MEDIA QUERY FONT RESIZE*/
 /*
  *
  * Header
@@ -59,10 +91,10 @@ header, nav, footer, section, article, div {
 
 .header__subtitle {
   display: block;
-  /*font-size: 0.5em;*/
   font-size: 2.5vw;
   font-weight: 400;
 }
+
 /*
  *
  * Main
@@ -91,21 +123,21 @@ main {
 .banner {
   width: 100%;
   position: relative;
-  background-image: url("./images/business_1280x852.jpeg");
+  background-image: url("../img/business_1280x852.jpeg");
   background-size: cover;
   height: 300px;
 }
 
 .fig__text {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-	font-size: 1.5vw;
-	font-style: italic;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 1.5vw;
+  font-style: italic;
 }
 /*
  *
- * Top News
+ * Section header
  *
  */
 
@@ -118,12 +150,11 @@ main {
 }
 
 .section__subtitle {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 20px;
   color: #2d3c49;
   padding-top: 5px;
 }
-
 
 /*
  *
@@ -140,8 +171,7 @@ main {
     width: 33%;
     margin: 1px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .item-image {
