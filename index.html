@@ -19,12 +19,12 @@
   <body>
     <header class="page-header">
       <a href="/">
-	  <picture>
-        <source srcset="images/coding@1x.png" media="(max-width: 400px)">
-        <source srcset="images/coding@2x.png">
-        <img src="images/coding@2x.png" alt="coding icon" style="width:50%;">
-      </picture>
-<!--        <img class="header__logo" src="images/coding@2x.png" alt="coding icon">-->
+  	    <picture>
+          <source srcset="images/coding@1x.png" media="(max-width: 400px)">
+		  <source srcset="images/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
+          <source srcset="images/coding@2x.png">
+          <img src="images/coding@2x.png" alt="coding icon" style="width:50%;">
+        </picture>
       </a>
       <h1 class="header__title">
         LM Portfolio
@@ -46,17 +46,14 @@
 <!--END NAV BAR BOOTSTRAP-->
     <main>
       <section class="content">
-        <section class="caller">
-        </section>
-      <section>
-        <article class="post">
+        <figure class="banner">
+		  <h2 class="fig__text">Coding is life</h2>
+        </figure>
             <article class="container">
                 <h3 class="section__title">Featured Work</h3>
                 <div class="flex-container">
                     <div>
-                        <figure>
-                          <img src="./images/porsche-model.png" alt="Porsche 911 GT2" class="item-image" />
-                        </figure>
+                        <img src="./images/porsche-model.png" alt="Porsche 911 GT2" class="item-image" />
                         <span class="section__subtitle">Cars</span>
                     </div>
                     <div>
@@ -68,16 +65,14 @@
                         <span class="section__subtitle">Music</span>
                     </div>
                 </div>
-            </div>
-       </article>
+            </article>
       </section>
-    </section>
       <footer>
         <ul>
-          <li><a href="#" class="fa fa-envelope"></a></li>
-          <li><a href="#" class="fa fa-twitter"></a></li>
-          <li><a href="#" class="fa fa-github"></a></li>
-          <li><a href="#" class="fa fa-linkedin-square"></a></li>		  
+          <li><a target="_blank" href="#" class="fa fa-envelope"></a></li>
+          <li><a target="_blank" href="https://twitter.com/luiz_mn" class="fa fa-twitter"></a></li>
+          <li><a target="_blank" href="https://github.com/luizmn" class="fa fa-github"></a></li>
+          <li><a target="_blank" href="#" class="fa fa-linkedin-square"></a></li>		  
         </ul>
       </footer>
     </main>

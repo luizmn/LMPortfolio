@@ -51,7 +51,7 @@ header, nav, footer, section, article, div {
 .header__title {
   font-weight: 300;
   color: #2d3c49;
-  font-size: 4vw;
+  font-size: 4.5vw;
   margin: 0 0 0 auto;
   text-align: right;
 }
@@ -60,7 +60,7 @@ header, nav, footer, section, article, div {
 .header__subtitle {
   display: block;
   /*font-size: 0.5em;*/
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 400;
 }
 /*
@@ -84,11 +84,11 @@ main {
 
 /*
  *
- * Caller
+ * Banner
  *
  */
 
-.caller {
+.banner {
   width: 100%;
   position: relative;
   background-image: url("./images/business_1280x852.jpeg");
@@ -96,6 +96,13 @@ main {
   height: 300px;
 }
 
+.fig__text {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+	font-size: 1.5vw;
+	font-style: italic;
+}
 /*
  *
  * Top News
