@@ -12,19 +12,23 @@
             href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> <!-- # NOQA -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- # NOQA -->
+    <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> <!-- # NOQA -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- # NOQA -->
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
+    <!--begin header logo and title section-->
     <header class="page-header">
       <a href="/">
-  	    <picture>
+        <!--begin resizable logo-->
+          <picture>
           <source srcset="img/coding@1x.png" media="(max-width: 400px)">
 		  <source srcset="img/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
           <source srcset="img/coding@2x.png">
           <img src="img/coding@2x.png" alt="coding icon" style="width:50%;">
         </picture>
+        <!--end resizable logo-->
       </a>
       <h1 class="header__title">
         LM Portfolio
@@ -33,22 +37,22 @@
         </span>
       </h1>
     </header>
-<!--BEGIN NAV BAR BOOTSTRAP-->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-<!--END NAV BAR BOOTSTRAP-->
+    <!--end header icon and title section-->
+<!--begin resizable navbar-->
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a target="_blank" href="https://github.com/">Github</a>
+    <a target="_blank" href="mailto:someone@example.com">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="smallMenu()">&#9776;</a>
+</div>
+<!-- end resizable navbar-->
     <main>
       <section class="content">
+        <!--begin banner-->
         <figure class="banner">
 		  <h2 class="fig__text">Coding is life</h2>
         </figure>
+        <!--end banner-->
             <article class="container">
                 <h3 class="section__title">Featured Work</h3>
                 <div class="flex-container">
