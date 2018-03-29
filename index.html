@@ -23,11 +23,11 @@
       <a href="/">
         <!--begin resizable logo-->
           <picture>
-          <source srcset="img/coding@1x.png" media="(max-width: 400px)">
-		  <source srcset="img/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
-          <source srcset="img/coding@2x.png">
-          <img src="img/coding@2x.png" alt="coding icon" style="width:50%;">
-        </picture>
+            <source srcset="img/coding@1x.png" media="(max-width: 400px)">
+            <source srcset="img/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
+            <source srcset="img/coding@2x.png">
+            <img src="img/coding@2x.png" alt="coding icon" class="banner">
+          </picture>
         <!--end resizable logo-->
       </a>
       <h1 class="header__title">
@@ -38,14 +38,14 @@
       </h1>
     </header>
     <!--end header icon and title section-->
-<!--begin resizable navbar-->
-<div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a target="_blank" href="https://github.com/">Github</a>
-    <a target="_blank" href="mailto:someone@example.com">Contact</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="smallMenu()">&#9776;</a>
-</div>
-<!-- end resizable navbar-->
+    <!--begin resizable navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a target="_blank" href="https://github.com/">Github</a>
+      <a target="_blank" href="mailto:someone@example.com">Contact</a>
+      <a href="javascript:void(0);" class="icon link" onclick="smallMenu()">&#9776;</a>
+    </div>
+    <!-- end resizable navbar-->
     <main>
       <section class="content">
         <!--begin banner-->
@@ -53,26 +53,41 @@
 		  <h2 class="fig__text">Coding is life</h2>
         </figure>
         <!--end banner-->
-            <article class="container">
-                <h3 class="section__title">Featured Work</h3>
-                <div class="flex-container">
-                    <div>
-                        <img src="./img/porsche-model.png" alt="Porsche 911 GT2" class="item-image" />
-                        <span class="section__subtitle">Cars</span>
-						<p>Subtle design that improves performance and enhances exterior beauty.</p>
-                    </div>
-                    <div>
-                        <img src="./img/astonmartinboat.jpg" alt="Aston Martin Boat" class="item-image" />
-                        <span class="section__subtitle">Boats</span>
-						<p>Boat lettering or graphics, wrapping, registration numbers, hailing ports, decals and more.</p>
-                    </div>
-                    <div>
-                        <img src="./img/MusicFreepik.jpg" alt="Designed by Freepik" class="item-image">
-                        <span class="section__subtitle">Music</span>
-						<p>Video and music editing, flyers, brochures and and any other media needed to your presentation.</p>
-                    </div>
-                </div>
-            </article>
+        <article class="container">
+          <h3 class="section__title">Featured Work</h3>
+          <div class="flex-container">
+            <div>
+              <picture>
+                <source srcset="img/porsche-model-sm.png" media="(max-width: 400px)">
+                <source srcset="img/porsche-model-med.png" media="(min-width: 401px) and (max-width: 1024px)">
+                <source srcset="img/porsche-model-big.png">
+                <img src="./img/porsche-model-big.png" alt="Porsche 911 GT2 RS" class="item-image" />
+              </picture>
+              <span class="section__subtitle">Cars</span>
+              <p>Subtle design that improves performance and enhances exterior beauty.</p>
+            </div>
+            <div>
+              <picture>
+                <source srcset="./img/astonmartinboat-sm.jpg" media="(max-width: 400px)">
+                <source srcset="./img/astonmartinboat-med.jpg" media="(min-width: 401px) and (max-width: 1024px)">
+                <source srcset="./img/astonmartinboat-big.jpg">
+                <img src="./img/astonmartinboat-big.jpg" alt="Porsche 911 GT2 RS" class="item-image" />
+              </picture>
+              <span class="section__subtitle">Boats</span>
+              <p>Boat lettering or graphics, wrapping, registration numbers, hailing ports, decals and more.</p>
+            </div>
+            <div>
+              <picture>
+                <source srcset="./img/MusicFreepik-sm.jpg" media="(max-width: 400px)">
+                <source srcset="./img/MusicFreepik-med.jpg" media="(min-width: 401px) and (max-width: 1024px)">
+                <source srcset="./img/MusicFreepik-big.jpg">
+                <img src="./img/MusicFreepik-big.jpg" alt="Music festival by Freepik" class="item-image" />
+              </picture>
+              <span class="section__subtitle">Music</span>
+              <p>Video and music editing, flyers, brochures and and any other media needed to your presentation.</p>
+            </div>
+          </div>
+        </article>
       </section>
       <footer>
         <ul>

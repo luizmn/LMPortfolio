@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: auto;
   padding: 0;
   max-width: 1280px;
@@ -11,11 +12,20 @@ body {
   color: #424242;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
-header, nav, footer, section, article, div {
+header,
+nav,
+footer,
+section,
+article,
+div {
   box-sizing: border-box;
 }
 
@@ -46,20 +56,26 @@ p {
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #000;
 }
 
 .active {
   background-color: #7d97ad;
-  color: white;
+  color: #fff;
 }
 
 .topnav .icon {
   display: none;
 }
 
+.topnav .link{
+  font-size: 15px;
+}
+
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+      display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -67,7 +83,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+      position: relative;
+  }
   .topnav.responsive .icon {
       position: absolute;
       right: 0;
