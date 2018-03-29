@@ -8,68 +8,78 @@
     <!-- Bootstrap 3 -->
     <link rel="stylesheet"
         href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet"
+    <link rel="stylesheet"
             href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> <!-- # NOQA -->
-            <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-            <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script><!-- # NOQA -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- # NOQA -->
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> <!-- # NOQA -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- # NOQA -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <header class="header">
-      <div class="header__inner">
-        <img class="header__logo" src="images/coding@2x.png" alt="coding ">
-        <span class="header__title">
-          LM Portfolio
-          <h4> Udacity Student </h4>
+    <!--begin header logo and title section-->
+    <header class="page-header">
+      <a href="/">
+        <!--begin resizable logo-->
+          <picture>
+          <source srcset="img/coding@1x.png" media="(max-width: 400px)">
+		  <source srcset="img/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
+          <source srcset="img/coding@2x.png">
+          <img src="img/coding@2x.png" alt="coding icon" style="width:50%;">
+        </picture>
+        <!--end resizable logo-->
+      </a>
+      <h1 class="header__title">
+        LM Portfolio
+        <span class="header__subtitle">
+          Udacity Student
         </span>
-      </div>
-
+      </h1>
     </header>
-<!--NAV BAR BOOTSTRAP -->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-<!--NAV BAR -->
+    <!--end header icon and title section-->
+<!--begin resizable navbar-->
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a target="_blank" href="https://github.com/">Github</a>
+    <a target="_blank" href="mailto:someone@example.com">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="smallMenu()">&#9776;</a>
+</div>
+<!-- end resizable navbar-->
     <main>
       <section class="content">
-        <section class="caller">
-        </section>
-      <section>
-        <article class="post">
-            <div class="container">
-                <h3 class="news__title">Featured Work</h3>
+        <!--begin banner-->
+        <figure class="banner">
+		  <h2 class="fig__text">Coding is life</h2>
+        </figure>
+        <!--end banner-->
+            <article class="container">
+                <h3 class="section__title">Featured Work</h3>
                 <div class="flex-container">
                     <div>
-                        <h4>Cars</h4>
-                        <picture>
-                            <img src="./images/porsche-model.png" alt="Porsche 911 GT2" class="item-image" />
-                        </picture>
+                        <img src="./img/porsche-model.png" alt="Porsche 911 GT2" class="item-image" />
+                        <span class="section__subtitle">Cars</span>
+						<p>Subtle design that improves performance and enhances exterior beauty.</p>
                     </div>
                     <div>
-                    <h4>Boats</h4>
-                        <img src="./images/astonmartinboat.jpg" alt="Aston Martin Boat" class="item-image" />
+                        <img src="./img/astonmartinboat.jpg" alt="Aston Martin Boat" class="item-image" />
+                        <span class="section__subtitle">Boats</span>
+						<p>Boat lettering or graphics, wrapping, registration numbers, hailing ports, decals and more.</p>
                     </div>
                     <div>
-                        <h4>Music</h4>
-                        <img src="./images/MusicFreepik.jpg" alt="Designed by Freepik" class="item-image">
+                        <img src="./img/MusicFreepik.jpg" alt="Designed by Freepik" class="item-image">
+                        <span class="section__subtitle">Music</span>
+						<p>Video and music editing, flyers, brochures and and any other media needed to your presentation.</p>
                     </div>
                 </div>
-            </div>
-       </article>
+            </article>
       </section>
-    </section>
       <footer>
         <ul>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Follow us on Twitter</a></li>
-          <li><a href="#">RSS</a></li>
+          <li><a target="_blank" href="mailto:someone@example.com" class="fa fa-envelope"></a></li>
+          <li><a target="_blank" href="https://twitter.com/" class="fa fa-twitter"></a></li>
+          <li><a target="_blank" href="https://github.com/" class="fa fa-github"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com" class="fa fa-linkedin-square"></a></li>
         </ul>
       </footer>
     </main>
