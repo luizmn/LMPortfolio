@@ -1,6 +1,7 @@
 body,
 html {
   margin: auto;
+  margin-top: -20px;
   padding: 0;
   max-width: 1280px;
   height: 100%;
@@ -30,12 +31,13 @@ div {
 }
 
 p {
-  font-size: 14px;
   font-weight: 200;
   overflow: auto;
   text-align: justify;
-  margin-left: 5px;
+  margin: auto;
+  /*margin-left: 5px;
   margin-right: 5px;
+  margin-left: 5px;*/
 }
 
 /* begin resizable navigation bar */
@@ -107,15 +109,16 @@ p {
     }
 }
 
-@media all and (max-width: 1024px) and (min-width: 401px) {
+@media all and (min-width: 401px) and (max-width: 1024px) {
     p {
         font-size: 16px;
+        margin-bottom: 5px;
     }
 }
 
 @media all and (max-width: 400px) {
     p {
-        font-size: 9px;
+        font-size: 9.5px;
     }
 
 }
@@ -128,8 +131,8 @@ p {
  */
 
 .header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  transition: min-height 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+  transition: min-height .3s;
 }
 
 .page-header {
@@ -144,9 +147,7 @@ p {
 }
 
 .header__logo {
-  max-height: 90px;
-  width: auto;
-  float: left;
+  width: 50%;
 }
 
 .header__title {
@@ -156,7 +157,6 @@ p {
   margin: 0 0 0 auto;
   text-align: right;
 }
-
 
 .header__subtitle {
   display: block;
@@ -171,7 +171,7 @@ p {
  */
 
 main {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -241,6 +241,8 @@ main {
     margin: 1px;
     text-align: center;
     font-size: 20px;
+    overflow: auto;
+    object-fit: cover;
 }
 
 .item-image {

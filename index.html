@@ -1,93 +1,94 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LM Portfolio</title>
-    <!-- Bootstrap 3 -->
-    <link rel="stylesheet"
-        href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet"
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LM Portfolio</title>
+        <!-- Bootstrap 3 -->
+        <link rel="stylesheet"
+            href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet"
             href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> <!-- # NOQA -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- # NOQA -->
-    <script src="js/scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> <!-- # NOQA -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- # NOQA -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-    <!--begin header logo and title section-->
-    <header class="page-header">
-      <a href="/">
-        <!--begin resizable logo-->
-          <picture>
-            <source srcset="img/coding@1x.png" media="(max-width: 400px)">
-            <source srcset="img/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
-            <source srcset="img/coding@2x.png">
-            <img src="img/coding@2x.png" alt="coding icon" class="banner">
-          </picture>
-        <!--end resizable logo-->
-      </a>
-      <h1 class="header__title">
-        LM Portfolio
-        <span class="header__subtitle">
-          Udacity Student
-        </span>
-      </h1>
-    </header>
-    <!--end header icon and title section-->
-    <!--begin resizable navbar-->
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a target="_blank" href="https://github.com/">Github</a>
-      <a target="_blank" href="mailto:someone@example.com">Contact</a>
-      <a href="javascript:void(0);" class="icon link" onclick="smallMenu()">&#9776;</a>
-    </div>
-    <!-- end resizable navbar-->
-    <main>
-      <section class="content">
-        <!--begin banner-->
-        <figure class="banner">
-		  <h2 class="fig__text">Coding is life</h2>
-        </figure>
-        <!--end banner-->
-        <article class="container">
-          <h3 class="section__title">Featured Work</h3>
-          <div class="flex-container">
-            <div>
-              <picture>
-                <source srcset="img/porsche-model-sm.png" media="(max-width: 400px)">
-                <source srcset="img/porsche-model-med.png" media="(min-width: 401px) and (max-width: 1024px)">
-                <source srcset="img/porsche-model-big.png">
-                <img src="./img/porsche-model-big.png" alt="Porsche 911 GT2 RS" class="item-image" />
-              </picture>
-              <span class="section__subtitle">Cars</span>
-              <p>Subtle design that improves performance and enhances exterior beauty.</p>
-            </div>
-            <div>
-              <picture>
-                <source srcset="./img/astonmartinboat-sm.jpg" media="(max-width: 400px)">
-                <source srcset="./img/astonmartinboat-med.jpg" media="(min-width: 401px) and (max-width: 1024px)">
-                <source srcset="./img/astonmartinboat-big.jpg">
-                <img src="./img/astonmartinboat-big.jpg" alt="Porsche 911 GT2 RS" class="item-image" />
-              </picture>
-              <span class="section__subtitle">Boats</span>
-              <p>Boat lettering or graphics, wrapping, registration numbers, hailing ports, decals and more.</p>
-            </div>
-            <div>
-              <picture>
-                <source srcset="./img/MusicFreepik-sm.jpg" media="(max-width: 400px)">
-                <source srcset="./img/MusicFreepik-med.jpg" media="(min-width: 401px) and (max-width: 1024px)">
-                <source srcset="./img/MusicFreepik-big.jpg">
-                <img src="./img/MusicFreepik-big.jpg" alt="Music festival by Freepik" class="item-image" />
-              </picture>
-              <span class="section__subtitle">Music</span>
-              <p>Video and music editing, flyers, brochures and and any other media needed to your presentation.</p>
-            </div>
-          </div>
-        </article>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- # NOQA -->
+        <script src="js/scripts.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> <!-- # NOQA -->
+	    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- # NOQA -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--begin header logo and title section-->
+        <header class="page-header">
+            <a href="/">
+                <!--begin resizable logo-->
+                <picture>
+                    <source srcset="img/coding@1x.png" media="(max-width: 400px)">
+                    <source srcset="img/coding@15x.png" media="(min-width: 401px) and (max-width: 1024px)">
+                    <source srcset="img/coding@2x.png">
+                    <img src="img/coding@2x.png" alt="coding icon" class="header__logo">
+                </picture>
+                <!--end resizable logo-->
+            </a>
+            <h1 class="header__title">
+                LM Portfolio
+                <span class="header__subtitle">Udacity Student</span>
+            </h1>
+        </header>
+        <!--end header icon and title section-->
+        <!--begin resizable navbar-->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a target="_blank" href="https://github.com/">Github</a>
+            <a target="_blank" href="mailto:someone@example.com">Contact</a>
+            <a href="javascript:void(0);" class="icon link" onclick="smallMenu()">&#9776;</a>
+        </div>
+        <!-- end resizable navbar-->
+        <main>
+            <section class="content">
+                <!--begin banner-->
+                <figure class="banner">
+                     <h2 class="fig__text">Coding is life</h2>
+                </figure>
+                <!--end banner-->
+                <!--begin work content -->
+                <article class="container">
+                    <h3 class="section__title">Featured Work</h3>
+                    <div class="flex-container">
+                        <div>
+                            <picture>
+                                <source srcset="./img/porsche-model-sm.png" media="(max-width: 400px)">
+                                <source srcset="./img/porsche-model-med.png" media="(min-width: 401px) and (max-width: 1024px)">
+                                <source srcset="./img/porsche-model-big.png">
+                                <img src="./img/porsche-model-big.png" alt="Porsche 911 GT2 RS" class="item-image" />
+                            </picture>
+                            <span class="section__subtitle">Cars</span>
+                            <p>Subtle design that improves performance and enhances exterior beauty.</p>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="./img/astonmartinboat-sm.jpg" media="(max-width: 400px)">
+                                <source srcset="./img/astonmartinboat-med.jpg" media="(min-width: 401px) and (max-width: 1024px)">
+                                <source srcset="./img/astonmartinboat-big.jpg">
+                                <img src="./img/astonmartinboat-big.jpg" alt="Aston Martin boat" class="item-image" />
+                            </picture>
+                            <span class="section__subtitle">Boats</span>
+                            <p>Boat lettering or graphics, wrapping, registration numbers, hailing ports, decals and more.</p>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="./img/MusicFreepik-sm.jpg" media="(max-width: 400px)">
+                                <source srcset="./img/MusicFreepik-med.jpg" media="(min-width: 401px) and (max-width: 1024px)">
+                                <source srcset="./img/MusicFreepik-big.jpg">
+                                <img src="./img/MusicFreepik-big.jpg" alt="Music festival by Freepik" class="item-image" />
+                            </picture>
+                            <span class="section__subtitle">Music</span>
+                            <p>Video and music editing, flyers, brochures and and any other media needed to your presentation.</p>
+                        </div>
+                    </div>
+                </article>
+                <!--end work content -->
       </section>
       <footer>
         <ul>
